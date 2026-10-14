@@ -4,10 +4,10 @@ import "./globals.css";
 const instrument = Instrument_Serif({ subsets: ["latin"], variable: "--font-instrument", weight: "400", style: ["normal", "italic"] });
 const dmsans = DM_Sans({ subsets: ["latin"], variable: "--font-dmsans" });
 
-const __jsonld = {"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","name":"Laras","jobTitle":"Penyanyi & Penulis Lagu","url":"https://linkinbio-vinyl.vercel.app","inLanguage":"id"}};
+const __jsonld = {"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","name":"Laras","jobTitle":"Penyanyi & Penulis Lagu","url":"https://linkinbio-vinyl.pintuweb.id","inLanguage":"id"}};
 
 export const metadata = {
-  metadataBase: new URL("https://linkinbio-vinyl.vercel.app"),
+  metadataBase: new URL("https://linkinbio-vinyl.pintuweb.id"),
   title: { default: "Laras — Penyanyi & Penulis Lagu", template: "%s — Laras" },
   description: "Tautan Laras, penyanyi dan penulis lagu: album \"Senja Kala\" sepuluh lagu dengan kredit dan penggalan lirik, tur akustik lima kota November–Desember 2026, dan pengingat tiket.",
   applicationName: "Laras",
@@ -15,11 +15,11 @@ export const metadata = {
   authors: [{ name: "Laras" }],
   creator: "Laras",
   publisher: "Laras",
-  alternates: { canonical: "https://linkinbio-vinyl.vercel.app" },
+  alternates: { canonical: "https://linkinbio-vinyl.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://linkinbio-vinyl.vercel.app",
+    url: "https://linkinbio-vinyl.pintuweb.id",
     siteName: "Laras",
     title: "Laras — Penyanyi & Penulis Lagu",
     description: "Tautan Laras, penyanyi dan penulis lagu: album \"Senja Kala\" sepuluh lagu dengan kredit dan penggalan lirik, tur akustik lima kota November–Desember 2026, dan pengingat tiket.",

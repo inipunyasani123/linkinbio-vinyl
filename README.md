@@ -2,7 +2,7 @@
 
 Tautan Laras, penyanyi dan penulis lagu: album "Senja Kala" sepuluh lagu dengan kredit dan penggalan lirik, tur akustik lima kota November–Desember 2026, dan pengingat tiket.
 
-**Demo live:** https://linkinbio-vinyl.vercel.app
+**Demo live:** https://linkinbio-vinyl.pintuweb.id
 
 ![Tangkapan layar Laras](public/og.jpg)
 
