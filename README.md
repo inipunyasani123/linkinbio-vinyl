@@ -1,6 +1,6 @@
 # Laras — Penyanyi & Penulis Lagu
 
-Tautan Laras, penyanyi dan penulis lagu: album "Senja Kala" sepuluh lagu dengan kredit dan penggalan lirik, tur akustik lima kota November–Desember 2026, dan pengingat tiket.
+Tautan Laras, penyanyi dan penulis lagu: album "Senja Kala" sepuluh lagu dengan kredit dan penggalan lirik, tur akustik lima kota, dan pengingat tiket.
 
 **Demo live:** https://linkinbio-vinyl.pintuweb.id
 
