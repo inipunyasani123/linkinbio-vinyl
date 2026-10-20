@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ALBUM, SITE, totalDurasi } from '@/lib/laras';
 import Kembali from '../components/Kembali';
+import Gambar from '../components/Gambar';
 
 export const metadata = {
   title: 'Album "Senja Kala"',
@@ -15,10 +16,7 @@ export default function Album() {
       <div className="mx-auto max-w-xl">
         <Kembali />
         <div className="mt-10 grid items-end gap-6 sm:grid-cols-[10rem_1fr]">
-          <div aria-hidden="true" className="relative aspect-square w-40 rounded-md bg-gradient-to-br from-amberv via-[#c96e2a] to-[#5a2a14] p-4 shadow-[0_20px_50px_-20px_rgba(232,161,60,0.5)]">
-            <span className="absolute bottom-4 left-4 font-serif text-3xl leading-none text-studio">Senja<br />Kala</span>
-            <span className="absolute right-4 top-4 h-10 w-10 rounded-full bg-studio/80" />
-          </div>
+          <Gambar src="/images/sampul-senja-kala.webp" alt="Sampul album Senja Kala: siluet profil Laras bermata terpejam di depan matahari senja, gerimis, dan lampu kota yang menyala satu-satu" width={160} height={160} asli={800} priority className="aspect-square w-40 rounded-md shadow-[0_20px_50px_-20px_rgba(232,161,60,0.5)]" />
           <div>
             <p className="text-[11px] uppercase tracking-[0.3em] text-amberv">Album · {ALBUM.label}</p>
             <h1 className="mt-1 font-serif text-5xl">{ALBUM.judul}</h1>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Gambar from './components/Gambar';
 import { Bell, FileText, Mic2, Play, Ticket } from 'lucide-react';
 import { ALBUM, LINKS, durasiSisi } from '@/lib/laras';
 import { hariIniWIB } from '@/lib/waktu';
@@ -13,14 +14,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center px-4 py-12 lg:px-8">
       <div className="w-full max-w-md lg:grid lg:max-w-5xl lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:items-center lg:gap-14">
-        {/* Piringan — di layar lebar keluar dari sampul album. Persona fiktif, tanpa foto. */}
-        <div className="rise relative mx-auto h-52 w-52 lg:h-[22rem] lg:w-full lg:max-w-[32rem]" aria-hidden="true">
-          <div className="absolute inset-y-8 left-0 z-10 hidden aspect-square rounded-md bg-gradient-to-br from-amberv via-[#c96e2a] to-[#5a2a14] p-6 shadow-[0_30px_70px_-25px_rgba(0,0,0,0.9)] lg:block">
-            <span className="absolute bottom-6 left-6 font-serif text-5xl leading-[0.9] text-studio">Senja<br />Kala</span>
-            <span className="absolute right-6 top-6 h-14 w-14 rounded-full bg-studio/80" />
-            <span className="absolute left-6 top-6 text-[10px] font-semibold uppercase tracking-[0.3em] text-studio/80">Laras · LP</span>
-          </div>
-          <div className="absolute inset-0 lg:inset-y-4 lg:left-auto lg:right-0 lg:aspect-square">
+        {/* Sampul album + piringan yang menyembul dari sampulnya. Ilustrasi asli, persona fiktif. */}
+        <div className="rise relative mx-auto h-52 w-full max-w-[20rem] lg:h-[22rem] lg:max-w-[32rem]" aria-hidden="true">
+          <Gambar src="/images/sampul-senja-kala.webp" alt="" width={352} height={352} asli={800} sizes="(min-width: 1024px) 288px, 176px" priority className="absolute inset-y-4 left-0 z-10 aspect-square h-[calc(100%-2rem)] w-auto rounded-md shadow-[0_30px_70px_-25px_rgba(0,0,0,0.9)] lg:inset-y-8 lg:h-[calc(100%-4rem)]" />
+          <div className="absolute inset-y-0 right-0 aspect-square lg:inset-y-4">
             <div className="record absolute inset-0 rounded-full shadow-[0_20px_60px_-15px_rgba(232,161,60,0.35)]" />
             <div className="absolute left-1/2 top-1/2 grid h-[38%] w-[38%] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border-4 border-studio bg-amberv text-center text-studio">
               <span className="font-serif text-lg leading-none lg:text-2xl">Laras</span>
