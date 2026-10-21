@@ -17,8 +17,9 @@ export default function Home() {
         {/* Sampul album + piringan yang menyembul dari sampulnya. Ilustrasi asli, persona fiktif. */}
         <div className="rise relative mx-auto h-52 w-full max-w-[20rem] lg:h-[22rem] lg:max-w-[32rem]" aria-hidden="true">
           <Gambar src="/images/sampul-senja-kala.webp" alt="" width={352} height={352} asli={800} sizes="(min-width: 1024px) 288px, 176px" priority className="absolute inset-y-4 left-0 z-10 aspect-square h-[calc(100%-2rem)] w-auto rounded-md shadow-[0_30px_70px_-25px_rgba(0,0,0,0.9)] lg:inset-y-8 lg:h-[calc(100%-4rem)]" />
-          <div className="absolute inset-y-0 right-0 aspect-square lg:inset-y-4">
-            <div className="record absolute inset-0 rounded-full shadow-[0_20px_60px_-15px_rgba(232,161,60,0.35)]" />
+          {/* Piringan diputar di dalam pembungkus bulat ber-overflow-hidden: sudut kotak yang berputar tidak melebarkan halaman. */}
+          <div className="absolute inset-y-0 right-0 aspect-square overflow-hidden rounded-full shadow-[0_20px_60px_-15px_rgba(232,161,60,0.35)] lg:inset-y-4">
+            <div className="record absolute inset-0 rounded-full" />
             <div className="absolute left-1/2 top-1/2 grid h-[38%] w-[38%] -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border-4 border-studio bg-amberv text-center text-studio">
               <span className="font-serif text-lg leading-none lg:text-2xl">Laras</span>
               <span className="-mt-3 text-[8px] font-semibold uppercase tracking-[0.12em] lg:text-[10px]">Senja Kala</span>
